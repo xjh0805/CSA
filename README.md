@@ -39,3 +39,10 @@ https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC
 ```
 python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --logg_path runs/runX/logs --model_name "$MODEL_PATH"
 ```
+
+## Evaluate trained models
+```
+from vocab import Vocabulary
+import evaluation
+evaluation.evalrank("$RUN_PATH/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+```
