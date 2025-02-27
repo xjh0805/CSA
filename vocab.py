@@ -1,11 +1,4 @@
-# -----------------------------------------------------------
-# Stacked Cross Attention Network implementation based on 
-# https://arxiv.org/abs/1803.08024.
-# "Stacked Cross Attention for Image-Text Matching"
-# Kuang-Huei Lee, Xi Chen, Gang Hua, Houdong Hu, Xiaodong He
-#
-# Writen by Kuang-Huei Lee, 2018
-# ---------------------------------------------------------------
+
 """Vocabulary wrapper"""
 
 import nltk
@@ -109,7 +102,7 @@ def main(data_path, data_name):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', default='/home/neo/f30k-coco-data/')
+    parser.add_argument('--data_path', default='/home/')
     parser.add_argument('--data_name', default='f30k_precomp',
                         help='{coco,f30k}_precomp')
     opt = parser.parse_args()
